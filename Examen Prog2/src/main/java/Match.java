@@ -73,7 +73,7 @@ public class Match {
                 getCombattants1().getPalmares().setVictoire();
                 getCombattants2().getPalmares().setDefaite();
                 getCombattants1().getPalmares();
-                getCombattants1().getTitre().add("titre");
+                getCombattants1().setTitre();
             }
             else if(score2 == score1){
                 getCombattants1().getPalmares().setEgalite();
@@ -82,7 +82,7 @@ public class Match {
             else{
                 getCombattants2().getPalmares().setVictoire();
                 getCombattants1().getPalmares().setDefaite();
-                getCombattants2().getTitre().add("titre");
+                getCombattants2().setTitre();
             }
         }
         else if(match.equals(TypesMatch.officiels)){
